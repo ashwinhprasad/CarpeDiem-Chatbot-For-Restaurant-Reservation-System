@@ -1,0 +1,57 @@
+{"intents":
+  [
+    {
+      "tag":"greeting",
+      "input":["Is this Carpe Diem","hello","hi there","nice to meet you","hi","is this the carpe diem restaurant ?","is this dark ?","hey","hi there","hi, carpe diem restaurant ?","hello there","anyone there ?","is this carpe diem","is this carpediem"," hi, carpe diem restaurant ?"],
+      "responses":[
+          "Hi. Welcome to the Carpe Diem",
+          "hello there. welcome to Carpe Diem restaurant. ",
+          "This is Carpe Diem restaurant, at your service",
+          "hello. This is CarpeDiem restaraunt. How may I help you ?"
+      ]
+    },
+    {
+      "tag":"goodbye",
+      "input":["Thanks","Thank you","Thanks","Thanks for the info","bye","bye bro","adios","okay bye","goodbye","see you later","i will catch you later","i will catch up later","okay i will see you later","I will talk to you later","will text you later","bye bro, I'll talk to you later","Bye brother"],
+      "responses":[
+          "Okay, Bye",
+          "Have a nice day",
+          "Goodbye",
+          "Take care",
+          "Okay , Take care",
+          "Thank you. Please visit again"
+      ]
+    },
+    {
+      "tag":"reservation",
+      "input":["can I make a reservation now ?","I would like to make a reservation now","can i reserve a table now ?","can i book a table now ?","Is reservation available ?","is reservations available ?","I would like to book a table","I would like to reserve a table","i would like to book a table","we would like to reserve a table"],
+      "responses":[
+        "reservations are available. please proceed to fill the form",
+        "you may book a table. kindly, proceed with filling the form"
+      ]
+    },
+    {
+      "tag":"timings",
+    "input":["when does the restaurant open ?","what about the restaurant timing","what is the timing of the restaurant ?","what are the timings of the restaurant","what are the timings of the hotel","what is the timings for the restaurant ?","when will the restaurant be open ?","what are the working days and timing ?","may i know the timings at which the restaurant may be open ?","restaurant timings please"],
+      "responses":[
+          "We are available from 8:00am - 9:30pm on all the days of the week",
+          "Working hours are 8:00am - 9:30pm and we are available on all the days"
+      ]
+    },
+    {
+      "tag":"location",
+      "input":["where is the restaurant located","location of carpe diem","where is the hotel located ?","where is the restaurant","how many branches are there ?","where are you from ?","where are the restaurants located ?","where are the hotels located ?","how many branches are there and thier location ?","how many branches are there and where are they ?","can you tell us the location of the restaurants","can you share the location of the hotels","location of the hotel","where is the hotel located ?","where is the restaurant located ?"],
+      "responses":[
+        "we have 3 main branches all over India. (Chennai-Tamil Nadu, Mumbai - maharashtra , Delhi)",
+        "we have a branch in chennai, mumbai and delhi"
+      ]
+    },
+    {
+      "tag":"menu",
+      "input":["can you show me the menu","menu please","what about the menu ?","sections of food available","what are the types of food available in the restaurant ?","types of food available ?","how about the foods ?","what about the types of food available","what about the food quality and quantity ?","how many variety of foods are availble","different types of food"],
+      "responses":[
+        "We have extremely differnt variety of foods in our menu. select the button below and take a look at our menu",
+        "we have a lot of different sections and types of food available. please take a look at the menu"      ]
+    }
+  ]
+}
