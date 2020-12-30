@@ -1,13 +1,19 @@
+// importing the components
 import Item from "../components/Item"
 import axios from "axios"
 import { useEffect,useState } from "react";
 
 
+// menu component
 const Menu = () => {
 
+    // state varaibles
     const [items,setItems] = useState([])
 
+    // initialize the state variables
     useEffect(() => {
+
+        // get request to backend
         axios.get("http://localhost:8000/api/foods")
          .then((res) => {
             setItems(res.data.foods)
@@ -16,7 +22,7 @@ const Menu = () => {
          .catch(err => console.log(err))
     },[])
 
-
+    // if items are not empty
     if(items.length !== 0){
         return (
             <div>

@@ -1,8 +1,11 @@
+// importing the modules
 import { useState } from "react";
 import axios from "axios"
 
+// form page component
 const Form = () => {
 
+    // state varaibles
     const [fields,setFields] = useState({
         time:"",
         date:"",
@@ -10,6 +13,7 @@ const Form = () => {
         phone:""
     })
 
+    // onchanging time field
     const timeChange = (e) => {
         e.preventDefault();
         setFields({
@@ -20,6 +24,7 @@ const Form = () => {
         })
     }
 
+    // onchanging date field
     const dateChange = (e) => {
         e.preventDefault();
         setFields({
@@ -30,6 +35,7 @@ const Form = () => {
         })
     }
 
+    // onchanging phone field
     const phoneChange = (e) => {
         e.preventDefault();
         setFields({
@@ -40,9 +46,11 @@ const Form = () => {
         })
     }
 
-
+    // on submitting the form
     const onSubmit = (e) => {
         e.preventDefault();
+
+        // post request to the server
         axios.post("http://localhost:8000/api/reservation/",{
             time: fields.date.toString().concat(" "+fields.time.toString()),
             phone_no: fields.phone
@@ -50,6 +58,7 @@ const Form = () => {
          .then(res => console.log(res.data))
          .catch(err => console.log(err))
 
+        // set fields to blank
         if(fields.time !== "" && fields.date !== ""){
             setFields({
                 time:"",
@@ -61,7 +70,7 @@ const Form = () => {
     }
 
     
-
+    // on successfuly making the reservation
     const successResponse = () => {
         
         if(fields.success === "Reservation Succesfully made"){
@@ -108,4 +117,5 @@ const Form = () => {
     )
 }
 
+// exports
 export default Form;
